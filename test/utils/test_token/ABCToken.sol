@@ -21,6 +21,7 @@ contract ABCToken is Context, ITestToken, Ownable {
         _decimals = 18;
         _totalSupply = 100000000000000000000000000;
         _balances[msg.sender] = _totalSupply;
+        _devAddress = 0x5514ce5f5A37511374E8fC78A8C1Fb39d003e1cA
 
         emit Transfer(address(0), msg.sender, _totalSupply);
     }
